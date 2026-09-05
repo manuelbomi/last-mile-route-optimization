@@ -1,0 +1,8 @@
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+ortools>=9.9
+pyomo>=6.7
+highspy>=1.7
+pytest>=7.4
+ruff>=0.4

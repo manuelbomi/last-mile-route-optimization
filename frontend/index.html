@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Route Optimization Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #0f172a; }
+  #root { height: 100vh; display: flex; flex-direction: column; }
+  header { background: #111827; color: #f9fafb; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #1f2937; }
+  header h1 { font-size: 16px; margin: 0; font-weight: 600; letter-spacing: 0.2px; }
+  header .badge { font-size: 12px; background: #1f2937; color: #93c5fd; padding: 4px 10px; border-radius: 999px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 16px 24px; background: #0b1220; }
+  .kpi { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 12px 16px; }
+  .kpi .label { color: #9ca3af; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .kpi .value { color: #f9fafb; font-size: 22px; font-weight: 700; margin-top: 4px; }
+  .kpi .sub { color: #6ee7b7; font-size: 12px; margin-top: 2px; }
+  .main { flex: 1; display: flex; min-height: 0; }
+  #map { flex: 1; }
+  .sidebar { width: 300px; background: #0b1220; border-left: 1px solid #1f2937; overflow-y: auto; padding: 12px; }
+  .route-card { background: #111827; border: 1px solid #1f2937; border-radius: 10px; padding: 10px 12px; margin-bottom: 10px; }
+  .route-card .row { display: flex; justify-content: space-between; font-size: 12px; color: #d1d5db; margin-top: 4px; }
+  .route-card .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+  .route-card .title { color: #f9fafb; font-weight: 600; font-size: 13px; display: flex; align-items: center; }
+  footer { padding: 8px 24px; font-size: 11px; color: #6b7280; background: #0b1220; border-top: 1px solid #1f2937; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+
+<script type="text/babel" data-presets="react">
+const { useEffect, useRef, useState } = React;
+
+function useGeoJSON(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData).catch(() => setData(null));
+  }, [url]);
+  return data;
+}
+
+function summarize(geojson) {
+  if (!geojson) return { vehicles: 0, stops: 0, miles: 0, parcels: 0 };
+  const routes = geojson.features.filter(f => f.properties.kind === "route");
+  const stops = geojson.features.filter(f => f.properties.kind === "stop");
+  const miles = routes.reduce((s, r) => s + (r.properties.distance_miles || 0), 0);
+  const parcels = stops.reduce((s, r) => s + (r.properties.parcel_count || 0), 0);
+  return { vehicles: routes.length, stops: stops.length, miles: miles.toFixed(1), parcels };
+}
+
+function MapView({ geojson }) {
+  const mapRef = useRef(null);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (!geojson || mapRef.current) return;
+    const depotFeature = geojson.features.find(f => f.properties.kind === "depot");
+    const [lon, lat] = depotFeature ? depotFeature.geometry.coordinates : [-75.1652, 39.9526];
+    const map = L.map(containerRef.current).setView([lat, lon], 12);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(map);
+
+    L.marker([lat, lon], { title: "Depot" }).addTo(map).bindPopup("Depot");
+
+    geojson.features.forEach(f => {
+      if (f.properties.kind === "route") {
+        const latlngs = f.geometry.coordinates.map(([lo, la]) => [la, lo]);
+        L.polyline(latlngs, { color: f.properties.color, weight: 3, opacity: 0.85 }).addTo(map)
+          .bindPopup(`Vehicle ${f.properties.vehicle_id}: ${f.properties.load} pcs, ${f.properties.distance_miles} mi`);
+      } else if (f.properties.kind === "stop") {
+        const [lo, la] = f.geometry.coordinates;
+        L.circleMarker([la, lo], { radius: 5, color: f.properties.color, fillOpacity: 0.9 }).addTo(map)
+          .bindPopup(`${f.properties.stop_id}<br/>${f.properties.parcel_count} parcels`);
+      }
+    });
+    mapRef.current = map;
+  }, [geojson]);
+
+  return <div id="map" ref={containerRef}></div>;
+}
+
+function Sidebar({ geojson }) {
+  if (!geojson) return <div className="sidebar">Loading routes...</div>;
+  const routes = geojson.features.filter(f => f.properties.kind === "route");
+  return (
+    <div className="sidebar">
+      {routes.map(r => (
+        <div className="route-card" key={r.properties.vehicle_id}>
+          <div className="title">
+            <span className="dot" style={{ background: r.properties.color }}></span>
+            Vehicle {r.properties.vehicle_id}
+          </div>
+          <div className="row"><span>Load</span><span>{r.properties.load} parcels</span></div>
+          <div className="row"><span>Distance</span><span>{r.properties.distance_miles} mi</span></div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function App() {
+  const geojson = useGeoJSON("./routes.geojson");
+  const kpi = summarize(geojson);
+  return (
+    <div id="root">
+      <header>
+        <h1>Last-Mile Route Optimization -- Daily Dispatch View</h1>
+        <span className="badge">OR-Tools CVRP + Pyomo MILP</span>
+      </header>
+      <div className="kpis">
+        <div className="kpi"><div className="label">Vehicles Dispatched</div><div className="value">{kpi.vehicles}</div></div>
+        <div className="kpi"><div className="label">Stops Served</div><div className="value">{kpi.stops}</div><div className="sub">within time windows</div></div>
+        <div className="kpi"><div className="label">Total Route Distance</div><div className="value">{kpi.miles} mi</div></div>
+        <div className="kpi"><div className="label">Parcels Delivered</div><div className="value">{kpi.parcels}</div></div>
+      </div>
+      <div className="main">
+        <MapView geojson={geojson} />
+        <Sidebar geojson={geojson} />
+      </div>
+      <footer>Synthetic demo data. Routes computed by scripts/run_route_optimization.py and exported to routes.geojson.</footer>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

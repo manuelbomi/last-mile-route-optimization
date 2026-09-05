@@ -1,0 +1,1370 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1652,
+          39.9526
+        ]
+      },
+      "properties": {
+        "kind": "depot"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.1652,
+            39.9526
+          ],
+          [
+            -75.31803652868847,
+            39.9453584650618
+          ],
+          [
+            -75.35225410320473,
+            39.91455157227196
+          ],
+          [
+            -75.34359737976942,
+            39.865522031640886
+          ],
+          [
+            -75.3682730557559,
+            39.89802133661493
+          ],
+          [
+            -75.34719334453177,
+            39.85330829222666
+          ],
+          [
+            -75.30484814131248,
+            39.82321836267
+          ],
+          [
+            -75.29741081557371,
+            39.86569568138402
+          ],
+          [
+            -75.29228480188578,
+            39.858247661497096
+          ],
+          [
+            -75.2938287578011,
+            39.85353602897232
+          ],
+          [
+            -75.26841764241568,
+            39.86886900737126
+          ],
+          [
+            -75.212512535624,
+            39.85713508912188
+          ],
+          [
+            -75.17229519288168,
+            39.847136083963264
+          ],
+          [
+            -75.13427441109431,
+            39.80647992798931
+          ],
+          [
+            -75.07991090191761,
+            39.80442175919916
+          ],
+          [
+            -75.0681301304545,
+            39.84585872186132
+          ],
+          [
+            -75.08495310874368,
+            39.889739203581165
+          ],
+          [
+            -75.13370977930761,
+            39.90213766787637
+          ],
+          [
+            -75.1652,
+            39.9526
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "route",
+        "vehicle_id": 1,
+        "load": 121,
+        "distance_miles": 53.21,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.31803652868847,
+          39.9453584650618
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-043",
+        "vehicle_id": 1,
+        "parcel_count": 7,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.35225410320473,
+          39.91455157227196
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-048",
+        "vehicle_id": 1,
+        "parcel_count": 10,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.34359737976942,
+          39.865522031640886
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-060",
+        "vehicle_id": 1,
+        "parcel_count": 11,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3682730557559,
+          39.89802133661493
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-016",
+        "vehicle_id": 1,
+        "parcel_count": 4,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.34719334453177,
+          39.85330829222666
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-052",
+        "vehicle_id": 1,
+        "parcel_count": 11,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.30484814131248,
+          39.82321836267
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-045",
+        "vehicle_id": 1,
+        "parcel_count": 10,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.29741081557371,
+          39.86569568138402
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-023",
+        "vehicle_id": 1,
+        "parcel_count": 10,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.29228480188578,
+          39.858247661497096
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-019",
+        "vehicle_id": 1,
+        "parcel_count": 5,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2938287578011,
+          39.85353602897232
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-001",
+        "vehicle_id": 1,
+        "parcel_count": 11,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.26841764241568,
+          39.86886900737126
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-029",
+        "vehicle_id": 1,
+        "parcel_count": 1,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.212512535624,
+          39.85713508912188
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-035",
+        "vehicle_id": 1,
+        "parcel_count": 2,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.17229519288168,
+          39.847136083963264
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-046",
+        "vehicle_id": 1,
+        "parcel_count": 5,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.13427441109431,
+          39.80647992798931
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-003",
+        "vehicle_id": 1,
+        "parcel_count": 10,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.07991090191761,
+          39.80442175919916
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-057",
+        "vehicle_id": 1,
+        "parcel_count": 2,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0681301304545,
+          39.84585872186132
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-044",
+        "vehicle_id": 1,
+        "parcel_count": 7,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.08495310874368,
+          39.889739203581165
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-006",
+        "vehicle_id": 1,
+        "parcel_count": 9,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.13370977930761,
+          39.90213766787637
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-008",
+        "vehicle_id": 1,
+        "parcel_count": 6,
+        "color": "#3b82f6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.1652,
+            39.9526
+          ],
+          [
+            -75.19054785173941,
+            39.97348523543233
+          ],
+          [
+            -75.344394542108,
+            40.002151516979886
+          ],
+          [
+            -75.27150771579974,
+            39.96930188719983
+          ],
+          [
+            -75.2500579496799,
+            39.95073408230864
+          ],
+          [
+            -75.27926384232356,
+            39.94479652618726
+          ],
+          [
+            -75.30453650993496,
+            39.94736166984
+          ],
+          [
+            -75.35181017740955,
+            39.93913204596089
+          ],
+          [
+            -75.33785219266701,
+            39.98123150972833
+          ],
+          [
+            -75.3372309934796,
+            40.065432413634696
+          ],
+          [
+            -75.2969289355556,
+            40.07312492009791
+          ],
+          [
+            -75.22793058634497,
+            40.09201561631128
+          ],
+          [
+            -75.21333635806508,
+            40.0661565319203
+          ],
+          [
+            -75.18798550360664,
+            40.04968967003615
+          ],
+          [
+            -75.22807623768183,
+            39.99833677673708
+          ],
+          [
+            -75.21084055974104,
+            39.95328978025363
+          ],
+          [
+            -75.1652,
+            39.9526
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "route",
+        "vehicle_id": 2,
+        "load": 85,
+        "distance_miles": 50.45,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19054785173941,
+          39.97348523543233
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-037",
+        "vehicle_id": 2,
+        "parcel_count": 11,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.344394542108,
+          40.002151516979886
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-014",
+        "vehicle_id": 2,
+        "parcel_count": 3,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.27150771579974,
+          39.96930188719983
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-010",
+        "vehicle_id": 2,
+        "parcel_count": 8,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2500579496799,
+          39.95073408230864
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-015",
+        "vehicle_id": 2,
+        "parcel_count": 11,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.27926384232356,
+          39.94479652618726
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-030",
+        "vehicle_id": 2,
+        "parcel_count": 11,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.30453650993496,
+          39.94736166984
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-049",
+        "vehicle_id": 2,
+        "parcel_count": 5,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.35181017740955,
+          39.93913204596089
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-026",
+        "vehicle_id": 2,
+        "parcel_count": 4,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.33785219266701,
+          39.98123150972833
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-027",
+        "vehicle_id": 2,
+        "parcel_count": 2,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3372309934796,
+          40.065432413634696
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-054",
+        "vehicle_id": 2,
+        "parcel_count": 1,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.2969289355556,
+          40.07312492009791
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-051",
+        "vehicle_id": 2,
+        "parcel_count": 8,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.22793058634497,
+          40.09201561631128
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-011",
+        "vehicle_id": 2,
+        "parcel_count": 3,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.21333635806508,
+          40.0661565319203
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-005",
+        "vehicle_id": 2,
+        "parcel_count": 6,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.18798550360664,
+          40.04968967003615
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-012",
+        "vehicle_id": 2,
+        "parcel_count": 3,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.22807623768183,
+          39.99833677673708
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-058",
+        "vehicle_id": 2,
+        "parcel_count": 6,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.21084055974104,
+          39.95328978025363
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-031",
+        "vehicle_id": 2,
+        "parcel_count": 3,
+        "color": "#ef4444"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.1652,
+            39.9526
+          ],
+          [
+            -75.08048205705518,
+            39.97804789596832
+          ],
+          [
+            -75.0761688622805,
+            39.94784184011348
+          ],
+          [
+            -75.02248293792779,
+            39.95517628902172
+          ],
+          [
+            -75.01682519010738,
+            39.956377275583606
+          ],
+          [
+            -75.0056047234221,
+            39.96171411694844
+          ],
+          [
+            -75.01431602700329,
+            40.02779599526265
+          ],
+          [
+            -75.04467444234143,
+            40.09912179114741
+          ],
+          [
+            -75.17189260207196,
+            40.120806991955774
+          ],
+          [
+            -75.19059523938527,
+            40.12853747308152
+          ],
+          [
+            -75.16178001356123,
+            40.12107126903683
+          ],
+          [
+            -75.10325826034432,
+            40.10116865047959
+          ],
+          [
+            -75.10389074336221,
+            40.077176176212326
+          ],
+          [
+            -75.04605538761933,
+            40.07907846959385
+          ],
+          [
+            -75.1430003550235,
+            40.02969867224777
+          ],
+          [
+            -75.15110234141206,
+            40.02165021241294
+          ],
+          [
+            -75.11886228441949,
+            40.00466900327869
+          ],
+          [
+            -75.17265934380447,
+            39.96421340193461
+          ],
+          [
+            -75.1652,
+            39.9526
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "route",
+        "vehicle_id": 3,
+        "load": 111,
+        "distance_miles": 52.13,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.08048205705518,
+          39.97804789596832
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-053",
+        "vehicle_id": 3,
+        "parcel_count": 2,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0761688622805,
+          39.94784184011348
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-020",
+        "vehicle_id": 3,
+        "parcel_count": 4,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.02248293792779,
+          39.95517628902172
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-038",
+        "vehicle_id": 3,
+        "parcel_count": 6,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.01682519010738,
+          39.956377275583606
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-007",
+        "vehicle_id": 3,
+        "parcel_count": 11,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0056047234221,
+          39.96171411694844
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-033",
+        "vehicle_id": 3,
+        "parcel_count": 3,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.01431602700329,
+          40.02779599526265
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-047",
+        "vehicle_id": 3,
+        "parcel_count": 11,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.04467444234143,
+          40.09912179114741
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-022",
+        "vehicle_id": 3,
+        "parcel_count": 11,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.17189260207196,
+          40.120806991955774
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-013",
+        "vehicle_id": 3,
+        "parcel_count": 3,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.19059523938527,
+          40.12853747308152
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-041",
+        "vehicle_id": 3,
+        "parcel_count": 9,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.16178001356123,
+          40.12107126903683
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-032",
+        "vehicle_id": 3,
+        "parcel_count": 5,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.10325826034432,
+          40.10116865047959
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-036",
+        "vehicle_id": 3,
+        "parcel_count": 6,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.10389074336221,
+          40.077176176212326
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-034",
+        "vehicle_id": 3,
+        "parcel_count": 11,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.04605538761933,
+          40.07907846959385
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-056",
+        "vehicle_id": 3,
+        "parcel_count": 5,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1430003550235,
+          40.02969867224777
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-021",
+        "vehicle_id": 3,
+        "parcel_count": 4,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.15110234141206,
+          40.02165021241294
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-004",
+        "vehicle_id": 3,
+        "parcel_count": 7,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.11886228441949,
+          40.00466900327869
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-040",
+        "vehicle_id": 3,
+        "parcel_count": 10,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.17265934380447,
+          39.96421340193461
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-055",
+        "vehicle_id": 3,
+        "parcel_count": 3,
+        "color": "#10b981"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.1652,
+            39.9526
+          ],
+          [
+            -75.14555015298262,
+            39.92512495234789
+          ],
+          [
+            -75.1062767101831,
+            39.78757729478148
+          ],
+          [
+            -75.0981059174056,
+            39.78320711114308
+          ],
+          [
+            -75.04875966397726,
+            39.85881248719432
+          ],
+          [
+            -75.01593556814186,
+            39.86606830741101
+          ],
+          [
+            -75.02658570417236,
+            39.85288910570285
+          ],
+          [
+            -75.04066449721202,
+            39.897693272739055
+          ],
+          [
+            -74.93782314518876,
+            39.947653663398434
+          ],
+          [
+            -74.95068896454514,
+            39.99022501816789
+          ],
+          [
+            -75.01509694889579,
+            39.937089698811285
+          ],
+          [
+            -75.06953566869736,
+            39.97344981973848
+          ],
+          [
+            -75.1652,
+            39.9526
+          ]
+        ]
+      },
+      "properties": {
+        "kind": "route",
+        "vehicle_id": 5,
+        "load": 57,
+        "distance_miles": 47.91,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.14555015298262,
+          39.92512495234789
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-039",
+        "vehicle_id": 5,
+        "parcel_count": 10,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1062767101831,
+          39.78757729478148
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-018",
+        "vehicle_id": 5,
+        "parcel_count": 2,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0981059174056,
+          39.78320711114308
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-009",
+        "vehicle_id": 5,
+        "parcel_count": 1,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.04875966397726,
+          39.85881248719432
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-050",
+        "vehicle_id": 5,
+        "parcel_count": 5,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.01593556814186,
+          39.86606830741101
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-002",
+        "vehicle_id": 5,
+        "parcel_count": 1,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.02658570417236,
+          39.85288910570285
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-042",
+        "vehicle_id": 5,
+        "parcel_count": 9,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.04066449721202,
+          39.897693272739055
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-028",
+        "vehicle_id": 5,
+        "parcel_count": 3,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.93782314518876,
+          39.947653663398434
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-017",
+        "vehicle_id": 5,
+        "parcel_count": 2,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.95068896454514,
+          39.99022501816789
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-025",
+        "vehicle_id": 5,
+        "parcel_count": 11,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.01509694889579,
+          39.937089698811285
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-059",
+        "vehicle_id": 5,
+        "parcel_count": 6,
+        "color": "#f59e0b"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.06953566869736,
+          39.97344981973848
+        ]
+      },
+      "properties": {
+        "kind": "stop",
+        "stop_id": "STOP-024",
+        "vehicle_id": 5,
+        "parcel_count": 7,
+        "color": "#f59e0b"
+      }
+    }
+  ]
+}

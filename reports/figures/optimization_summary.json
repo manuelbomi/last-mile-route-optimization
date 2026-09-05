@@ -1,0 +1,12 @@
+{
+  "cvrp_ortools": {
+    "vehicles_used": 4,
+    "total_distance_miles": 203.69,
+    "solve_time_seconds": 0.045
+  },
+  "assignment_milp_pyomo_highs": {
+    "vehicles_used": 6,
+    "objective_miles": 501.98,
+    "status": "optimal"
+  }
+}
