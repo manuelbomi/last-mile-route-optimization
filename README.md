@@ -214,6 +214,7 @@ I can be reached through: manuelbomi@yahoo.com
 Publications:  https://scholar.google.com/citations?user=S-jTMfkAAAAJ&hl=en
 LinkedIn:  https://www.linkedin.com/in/emmanuel-oyekanlu-6ba98616
 Github:  https://github.com/manuelbomi
+Website: https://www.emmanueloyekanlu.com/
 
 ```
 [![Icons](https://skillicons.dev/icons?i=aws,azure,gcp,scala,mongodb,redis,cassandra,kafka,anaconda,matlab,nodejs,django,py,c,anaconda,git,github,mysql,docker,kubernetes&theme=dark)](https://skillicons.dev)
